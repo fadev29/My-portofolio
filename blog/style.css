@@ -73,7 +73,10 @@ nav .right-nav .icon {
   margin-left: 24px;
 }
 .blog .blog-form {
-  width: 25%;
+  width: 30%;
+  display: inline;
+  justify-content: center;
+  align-items: center;
 }
 .blog .blog-form .form-container {
   background-color: #dbdbdb;
@@ -120,6 +123,15 @@ textarea {
 .blog .blog-form .form-container form button:hover {
   background-color: #d12038;
 }
+footer {
+  display: flex;
+  background-color: black;
+  padding: 16px;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  margin-top: 50px;
+}
 @media screen and (max-width: 768px) {
   nav {
     padding-inline: 16px;
@@ -145,7 +157,62 @@ textarea {
   nav .right-nav .icon:hover {
     background-color: black;
   }
+  nav .right-nav .icon {
+    display: block;
+    background-color: black;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  nav .right-nav .icon:hover {
+    background-color: black;
+  }
+  .blog .blog-list .blog-list-item {
+    display: grid;
+    margin-inline: 15px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .material-symbols-outlined:hover {
     color: red;
+  }
+
+  .blog .blog-form .form-container form textarea {
+    height: 50px;
+  }
+  .blog .blog-list .blog-image img {
+    flex-direction: column;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 25px;
+  }
+  .blog-content h1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .blog {
+    flex-direction: column-reverse;
+    padding-inline: 16px;
+  }
+  .blog .blog-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog .blog-form {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .blog .blog-form .form-container form input {
+    height: 15px;
   }
 }

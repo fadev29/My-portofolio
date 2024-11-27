@@ -68,7 +68,8 @@ nav .right-nav .icon {
 
 .card .image img {
   max-width: 100%;
-  border-radius: 12px;
+  border-radius: 15px;
+  padding-inline: 40px;
 }
 
 .card .header h1 {
@@ -120,6 +121,7 @@ argumen odd/even untuk memilih elemen dengan posisi genap/ ganjil */
 .personal .right .skill img {
   width: 60px;
   height: 60px;
+  border-width: 1px 1px black;
 }
 .personal .right .skill .backend {
   border: 1px solid black;
@@ -155,6 +157,7 @@ footer {
   justify-content: center;
   color: white;
   align-items: center;
+  margin-top: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -178,6 +181,7 @@ footer {
     padding: 0;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
   }
   nav .right-nav .icon:hover {
     background-color: black;
@@ -193,8 +197,15 @@ footer {
     display: flex;
     justify-content: center;
   }
+  .personal .right h2 {
+    font-size: large;
+  }
   .card {
     max-width: fit-content;
+  }
+  .card .image img {
+    width: 95%;
+    padding-inline: 10px;
   }
   .personal .right h1,
   h2,
