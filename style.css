@@ -67,9 +67,17 @@ nav .right-nav .icon {
 }
 
 .card .image img {
-  max-width: 100%;
-  border-radius: 15px;
-  padding-inline: 40px;
+  /* width : untuk mengatur lebar elemen */
+  width: 400px;
+  /* height : untuk mengatur tinggi elemen */
+  height: 500px;
+  /* object-fit : untuk mengatur tampilan gambar sekala pembungkus */
+  object-fit: cover;
+  /* object-position : untuk mengatur posisi gambar */
+  object-position: center;
+  /* aspect-ratio : untuk mengatur rasio/proporsi gambar */
+  aspect-ratio: 1/1;
+  padding-inline: 25px;
 }
 
 .card .header h1 {
@@ -204,8 +212,16 @@ footer {
     max-width: fit-content;
   }
   .card .image img {
-    width: 95%;
-    padding-inline: 10px;
+    width: 85%;
+    /* object-fit : untuk mengatur tampilan gambar sekala pembungkus */
+    object-fit: cover;
+    /* object-position : untuk mengatur posisi gambar */
+    object-position: center;
+    right: 16px;
+    display: flex;
+    justify-content: center;
+    /* aspect-ratio : untuk mengatur rasio/proporsi gambar */
+    aspect-ratio: 1/1;
   }
   .personal .right h1,
   h2,
